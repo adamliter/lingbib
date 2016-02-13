@@ -18,7 +18,7 @@
 	maxcitenames=3,
 	maxbibnames=99
 ]{biblatex}
-\addbibresource{../../release/lingbib-master.bib}
+\addbibresource{../../database/out/lingbib.biblatex.bib}
 
 % retain "sortname" field as "namea" for use in "labelname"
 % necessary because "sortname" is not passed on by Biber
@@ -92,8 +92,8 @@ For each test case, the target output is directly followed by the test output.
 
 \bibentrytest{
 	Chomsky, Noam. 2013. \textit{Problems of projection}. \textit{Lingua} 130(1). 33--49.
-	}{
-	chomsky2013:projection
+}{
+	chomsky2013_projection
 }
 
 
@@ -105,7 +105,7 @@ For each test case, the target output is directly followed by the test output.
 \bibentrytest{
 	Munn, Alan Boag. 1993. \textit{Topics in the syntax and semantics of coordinate structures}. College Park, MD: University of Maryland PhD thesis.
 }{
-munn1993:coordinate
+	munn1993_coordinate
 }
 
 
@@ -122,7 +122,7 @@ Chomsky, Noam. 1986. \textit{Knowledge of language: Its nature, origin, and use}
 
 \subsection{Test Output}
 
-\nocite{chomsky1986:knowledge}
+\nocite{chomsky1986_knowledge}
 
 \printbibliography[
 heading=none
