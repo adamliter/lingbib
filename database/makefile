@@ -14,31 +14,33 @@
 SCRIPT_DIR = ../scripts
 
 SRC_DIR = src
-SRC_STRINGS = ${SRC_DIR}/strings_*.bib
-SRC_METADATA = ${SRC_DIR}/metadata_*.bib
-SRC_ENTRIES = ${SRC_DIR}/entries.bib
-SRC_ALL = ${SRC_STRINGS} ${SRC_METADATA} ${SRC_ENTRIES}
+SRC_FILE = ${SRC_DIR}/database.yaml
+# SRC_STRINGS = ${SRC_DIR}/strings_*.bib
+# SRC_METADATA = ${SRC_DIR}/metadata_*.bib
+# SRC_ENTRIES = ${SRC_DIR}/entries.bib
+# SRC_ALL = ${SRC_STRINGS} ${SRC_METADATA} ${SRC_ENTRIES}
 
 OUT_DIR = out
-OUT_FILE = ${OUT_DIR}/lingbib-master.bib
+OUT_FILE = ${OUT_DIR}/lingbib.biblatex.bib
 
 RELEASE_DIR = ../release
 
 
 all: $(OUT_FILE)
 
-$(OUT_FILE): $(SRC_ALL) $(OUT_DIR)
-	# concatenate files with blank lines in between
-	$(SCRIPT_DIR)/cat_with_headers.sh $(SRC_ALL) > $(OUT_FILE)
+$(OUT_FILE): $(SRC_FILE) $(OUT_DIR)
+	# convert source file to a usable Biblatex BIB file
+	$(SCRIPT_DIR)/yaml2bib.py $(SRC_FILE) $(OUT_FILE)
 
 $(OUT_DIR):
 	mkdir -p $(OUT_DIR)
 
-
 release: $(OUT_FILE) $(RELEASE_DIR)
 	cp $(OUT_FILE) $(RELEASE_DIR)
 
+$(RELEASE_DIR):
+	mkdir -p $(RELEASE_DIR)
 
 .PHONY: clean
 clean:
-	rm -rf $(OUT)
+	rm -rf $(OUT_DIR)
