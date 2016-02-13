@@ -3,22 +3,35 @@ people:
     first: Alan
     last: Munn
     lineage: ""
+    url: "https://msu.edu/~amunn/"
+    orcid: ""
   cristina_schmitt: &cristina_schmitt
     first: Cristina
     last: Schmitt
     lineage: ""
+    url: "http://msuacquisition.wordpress.com/"
+    orcid: ""
   hagit_borer: &hagit_borer
     first: Hagit
+    middle: ""
     last: Borer
     lineage: ""
+    url: "http://webspace.qmul.ac.uk/hborer/"
+    orcid: ""
   noam_chomsky: &noam_chomsky
     first: Noam
+    middle: ""
     last: Chomsky
     lineage: ""
+    url: "http://web.mit.edu/linguistics/people/faculty/chomsky/"
+    orcid: ""
   steven_abney: &steven_abney
     first: Steven
+    middle: Paul
     last: Abney
     lineage: ""
+    url: "http://www.vinartus.net/spa/index.html"
+    orcid: ""
 
 books:
   structuring_sense:
