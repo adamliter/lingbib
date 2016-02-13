@@ -2,30 +2,30 @@ people:
   alan_munn: &alan_munn
     first: Alan
     last: Munn
-    lineage: ""
     url: "https://msu.edu/~amunn/"
     orcid: ""
 
   cristina_schmitt: &cristina_schmitt
     first: Cristina
     last: Schmitt
-    lineage: ""
     url: "http://msuacquisition.wordpress.com/"
     orcid: ""
 
   hagit_borer: &hagit_borer
     first: Hagit
-    middle: ""
     last: Borer
-    lineage: ""
     url: "http://webspace.qmul.ac.uk/hborer/"
+    orcid: ""
+
+  luigi_rizzi: &luigi_rizzi
+    first: Luigi
+    last: Rizzi
+    url: ""
     orcid: ""
 
   noam_chomsky: &noam_chomsky
     first: Noam
-    middle: ""
     last: Chomsky
-    lineage: ""
     url: "http://web.mit.edu/linguistics/people/faculty/chomsky/"
     orcid: ""
 
@@ -33,7 +33,6 @@ people:
     first: Steven
     middle: Paul
     last: Abney
-    lineage: ""
     url: "http://www.vinartus.net/spa/index.html"
     orcid: ""
 
@@ -60,8 +59,7 @@ xdata:
     lingua_130_1:
       date: 2013-06
       editor:
-      - first: Luigi
-        last: Rizzi
+      - *luigi_rizzi
       issuesubtitle: Core Ideas and Results in Syntax
       issuetitle: Syntax and Cognition
       number: '1'
@@ -207,7 +205,7 @@ entries:
     titlekeyword: coordinate
     type: Thesis
     xdata: UMD
-    
+
   munn2005_number:
     abstract: Singular predicative nominals in English generally require an indefinite article, while equivalent constructions in the Romance languages do not. We examine two sorts of predication constructions, primary predications and modificational predication, and show that English and Romance vary consistently in their need for overt Number. This difference is attributed to the Free Agr Parameter applied to the nominal domain, which allows Num to be missing in Romance when not semantically required, as in most predicative constructions. In post-copular primary predications, an indefinite article is required even in Romance, unless the predicate is a profession or a role. We argue that Num is required in non-role predications to avoid a theta-marking configuration, and when no Num is present, as in role predications, the noun has an eventive argument and theta marks the subject of the predication.
     author:
