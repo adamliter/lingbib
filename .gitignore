@@ -127,7 +127,8 @@ sympy-plots-for-*.tex/
 # Other files to ignore
 #####################################
 
-### Sublime Text per-user files
+### Sublime Text files
+*.sublime-project
 *.sublime-workspace
 
 ### Compiled Python modules
