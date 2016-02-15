@@ -103,7 +103,7 @@ entries:
     - *steven_abney
     title: The {English} Noun Phrase in its Sentential Aspect
     titlekeyword: noun
-    type: Thesis
+    type: thesis
     xdata: MIT
 
   borer_mvbook_structuring:
@@ -111,7 +111,7 @@ entries:
     - *hagit_borer
     langid: american
     title: Structuring Sense
-    type: MvBook
+    type: mvbook
     volumes: '3'
     xdata: OUP
 
@@ -126,7 +126,7 @@ entries:
     pagetotal: '418'
     title: The Normal Course of Events
     titlekeyword: events
-    type: Book
+    type: book
     volume: '2'
 
   borer2005_name:
@@ -141,7 +141,7 @@ entries:
     pagetotal: '324'
     title: In Name Only
     titlekeyword: name
-    type: Book
+    type: book
     volume: '1'
 
   borer2013_form:
@@ -155,7 +155,7 @@ entries:
     pagetotal: '704'
     title: Taking Form
     titlekeyword: form
-    type: Book
+    type: book
     volume: '3'
 
   chomsky1986_knowledge:
@@ -169,7 +169,7 @@ entries:
     series: Convergence
     subtitle: Its Nature, Origin, and Use
     title: Knowledge of Language
-    type: Book
+    type: book
 
   chomsky2013_projection:
     abstract: >-
@@ -184,7 +184,7 @@ entries:
     pages: 33--49
     title: Problems of Projection
     titlekeyword: projection
-    type: Article
+    type: article
     xdata: lingua_130_1
 
   munn1993_coordinate:
@@ -201,7 +201,7 @@ entries:
     - *alan_munn
     title: Topics in the Syntax and Semantics of Coordinate Structures
     titlekeyword: coordinate
-    type: Thesis
+    type: thesis
     xdata: UMD
 
   munn2005_number:
@@ -216,5 +216,5 @@ entries:
     langid: canadian
     pages: 821--855
     title: Number and Indefinites
-    type: Article
+    type: article
     xdata: lingua_115_6
