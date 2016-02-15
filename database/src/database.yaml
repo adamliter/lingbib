@@ -72,7 +72,7 @@ xdata:
     OUP:
       location: Oxford, UK
       publisher: Oxford University Press
-      xdatatype: institution
+      xdatatype: publisher
       type: xdata
 
   institutions:
