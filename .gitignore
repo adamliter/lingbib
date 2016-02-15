@@ -3,6 +3,13 @@
 #################################################
 *.DS_Store
 
+#####################################
+# Other OS files
+#####################################
+
+### KDE
+.directory
+
 #################################################
 # Ignore auto-save files from Emacs
 #################################################
@@ -124,7 +131,7 @@ sympy-plots-for-*.tex/
 *.xdy
 
 #####################################
-# Other files to ignore
+# Other programs
 #####################################
 
 ### Sublime Text files
@@ -136,6 +143,10 @@ sympy-plots-for-*.tex/
 
 ### Backup files from Jabref
 *.bak
+
+#####################################
+# Specific to repository
+#####################################
 
 ### Backup files from lingbib app
 *.old
