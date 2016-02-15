@@ -160,9 +160,7 @@ entries:
 
   chomsky1986_knowledge:
     author:
-    - first: Noam
-      last: Chomsky
-    date: '1986'
+    - *noam_chomsky
     isbn: 0275900258
     keywords: syntax, language acquisition, binding theory
     langid: american
