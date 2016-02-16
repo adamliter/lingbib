@@ -3,38 +3,34 @@ people:
     first: Alan
     last: Munn
     url: "https://msu.edu/~amunn/"
-    orcid: ""
+    orcid: 0000-0003-0265-9119
 
   cristina_schmitt: &cristina_schmitt
     first: Cristina
     last: Schmitt
     url: "http://msuacquisition.wordpress.com/"
-    orcid: ""
 
   hagit_borer: &hagit_borer
     first: Hagit
     last: Borer
     url: "http://webspace.qmul.ac.uk/hborer/"
-    orcid: ""
 
   luigi_rizzi: &luigi_rizzi
     first: Luigi
     last: Rizzi
-    url: ""
-    orcid: ""
+    url: "http://www.ciscl.unisi.it/persone/rizzi.htm"
+    #orcid: 0000-0002-2543-2112 # No publication info is associated with this ORCID account, so maybe we should just delete it?
 
   noam_chomsky: &noam_chomsky
     first: Noam
     last: Chomsky
     url: "http://web.mit.edu/linguistics/people/faculty/chomsky/"
-    orcid: ""
 
   steven_abney: &steven_abney
     first: Steven
     middle: Paul
     last: Abney
     url: "http://www.vinartus.net/spa/index.html"
-    orcid: ""
 
 xdata:
   periodicals:
