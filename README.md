@@ -1,7 +1,9 @@
 # Lingbib
 
-Lingbib is a comprehensive, collaborative linguistics bibliography for LaTeX documents.
-It is intended to be used with the [S&P Biblatex implementation][uss-biblatex] of the [Unified Stylesheet for Linguistics][uss], but can also be used with other Biblatex styles.
+Lingbib is a comprehensive, collaborative bibliographic database for linguistics.
+It is intended to be used with [Biblatex][biblatex] and the [S&P implementation][uss-biblatex] of the [Unified Stylesheet for Linguistics][uss], but can also be used with other Biblatex styles.
+
+This is the main repository, which hosts the source data and associated resources.
 
 
 ## Overview
@@ -10,64 +12,72 @@ Every linguist who is a user of LaTeX currently has to create and maintain their
 It would be much more efficient if we could all contribute to and use a single, comprehensive bibliographic database for the field of linguistics.
 This approach will also help maximize the accuracy of the data.
 
-Lingbib provides such a database in Biblatex format (and in the future, the old BibTeX format), along with a system for...
-* maintaining an up-to-date copy of the database on your local computer,
-* syncing the database with a personal bibliography containing user-specific additions (for use with JabRef, BibDesk, and similar tools),
-* backing up your personal bibliography remotely, and
-* contributing to the database
+Unconventionally, the source data is maintained in [YAML][yaml] format using the Biblatex data model.
+This makes the database exceptionally easy to manipulate programmatically compared to the idiosyncratic BibTeX format, and keeps the source truly human-readable and -writable, unlike XML and JSON.
 
-We do this using the [Git][git] version control system, but you don't need to know Git in order to use Lingbib as we also provide a simple command line helper program (maintained separately at [lingbib-app][app]).
+The source data is then converted to a BibTeX `.bib` file, suitable for use with the state-of-the-art combination of [Biblatex][biblatex] and [Biber][biber].
+In the future, it will also be available in legacy BibTeX format (for compatibility with the old `bibtex` program and `.bst` style files), and potentially others as well.
+
+We are also in the process of developing a web interface for easy viewing, search, submission to, and editing of the database.
 
 
 ## Project Status
 
 This project is currently in the alpha stage.
-The database is small, and the [helper program][app] is not yet complete.
-We are in particular need of contributors in order to build Lingbib to a size large enough to be useful to general users, and could also use help from technically-inclined invididuals in testing the program and submission system.
+The database is small, and the web interface is not yet available.
 
+The database schema for how Lingbib uses the Biblatex entry types and data fields is nearing completion, and public documentation will be available soon.
+You can see the current status of the source data and how we generate the Biblatex/BIB release in the main branch of this repository.
 
-## Using Lingbib
-
-Lingbib can be used in LaTeX documents without additional setup thanks to Biblatex and Biber's ability to read remote bibliography files.
-To avoid having to access it over the internet on every compile, or to make use of any additional features, you will need to download and configure Lingbib.
-
-Instructions for setup and use can be found on the wiki at [Getting Started][getting-started].
+Please note that the "command-line helper app" referenced in the wiki and held in [lingbib/lingbib-app][app] is **defunct**.
+We had originally planned to develop a system for syncing the Lingbib database with a personal database for use with Jabref and other desktop reference managers, but this has been postponed indefinitely.
 
 
 ## How to Contribute
 
+### Submitting database entries and revisions
+
 The main way you can contribute to Lingbib is by submitting new entries and revisions to the bibliography file.
-For further information on how to contribute, see [For Contributors][for-contributors] on the wiki.
+This can be done though GitHub until the Lingbib web interface is available.
+Details on how to do this will be posted in the wiki soon.
+In the meantime, would-be contributors should [get in contact](Contact and Support).
 
+### Join the Team
 
-## Call for Maintainers
+We are currently looking for additional maintainers, and we expect this need to grow over time as the database gets larger. 
+Helping to maintain Lingbib will mostly involve handling pull requests and issues regarding the content of the database.
 
-We are currently looking for addition maintainers, and we expect this need to grow over time as the database gets larger.
-If you are interested getting more closely involved, you should get in touch with the Lingbib co-creators [Adam and Kenneth][email].
+We could also use help from technically-inclined invididuals in testing the database schema and developing the web interface.
+
+If you are interested getting more closely involved, you should [get in touch](Contact and Support) with us.
 We would greatly appreciate your help! :smile:
-
-Helping to maintain Lingbib will mostly involve handling pull requests and issues.
-Please see [For maintainers][for-maintainers] on the wiki for further information.
 
 
 ## Documentation
 
 General documentation is available on the [Lingbib wiki][wiki].
-Low-level documentation relevant only to maintainers, example database entries, and similar content is stored directly in the repository.
+Information relevant only to maintainers is stored directly in the repository.
+
+**IMPORTANT**: the wiki is currently out-of-date due to the above-mentioned change of plans and continuing rapid development.
+Please [get in contact](Contact and Support) for current information.
 
 
-## Support
+## Contact and Support
 
-If you have general comments or questions about Lingbib, we have a Gitter chatroom where you can join our discussion about how to build and maintain Lingbib.
+We have a Gitter chatroom where you can join our discussion about building and maintaining Lingbib.
 Feel free to also just drop by and say *hi*!
 
 [![Join the chat at https://gitter.im/lingbib/lingbib][gitter-badge]][gitter-chat]
 
-You can also report problems and bugs as well as suggest improvements via [GitHub issues][issues].
+You can also report specific problems and bugs, and suggest improvements via [GitHub issues][issues].
 
+Finally, feel free to contact the Lingbib co-creators, [Adam and Kenneth][email], directly by email.
 
 
 [app]: https://github.com/lingbib/lingbib-app
+[biblatex]: https://www.ctan.org/pkg/biblatex
+[biber]: http://biblatex-biber.sourceforge.net/
+[email]: mailto:adam.liter@gmail.com,khanson679@gmail.com
 [for-contributors]: https://github.com/lingbib/lingbib/wiki/For-contributors
 [for-maintainers]: https://github.com/lingbib/lingbib/wiki/For-maintainers
 [getting-started]: https://github.com/lingbib/lingbib/wiki/Getting-started
@@ -78,4 +88,4 @@ You can also report problems and bugs as well as suggest improvements via [GitHu
 [uss-biblatex]: https://github.com/semprag/biblatex-sp-unified
 [uss]: http://celxj.org/downloads/UnifiedStyleSheet.pdf
 [wiki]: https://github.com/lingbib/lingbib/wiki
-[email]: mailto:adam.liter@gmail.com,khanson679@gmail.com
+[yaml]: http://yaml.org/
