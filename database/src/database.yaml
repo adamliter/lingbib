@@ -19,7 +19,6 @@ people:
     first: Luigi
     last: Rizzi
     url: "http://www.ciscl.unisi.it/persone/rizzi.htm"
-    #orcid: 0000-0002-2543-2112 # No publication info is associated with this ORCID account, so maybe we should just delete it?
 
   noam_chomsky: &noam_chomsky
     first: Noam
