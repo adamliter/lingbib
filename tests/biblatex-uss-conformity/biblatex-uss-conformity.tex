@@ -1,0 +1,132 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = arara
+% arara: pdflatex
+% arara: biber
+% arara: pdflatex: { synctex: yes }
+
+\documentclass{article}
+
+\usepackage{parskip}
+\usepackage{hanging}
+
+\usepackage[
+	backend=biber,
+	% Install both of these styles from https://github.com/semprag/biblatex-sp-unified
+	bibstyle=biblatex-sp-unified,
+	citestyle=sp-authoryear-comp,
+	maxcitenames=3,
+	maxbibnames=99
+]{biblatex}
+\addbibresource{../../database/out/lingbib.biblatex.bib}
+
+% retain "sortname" field as "namea" for use in "labelname"
+% necessary because "sortname" is not passed on by Biber
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+       \step[fieldsource=sortname]
+       \step[fieldset=namea, origfieldval, final]
+    }
+  }
+}
+
+\DeclareLabelname{
+    \field{namea}
+    \field{shortauthor}
+    \field{author}
+    \field{shorteditor}
+    \field{editor}
+    \field{translator}
+}
+
+\setlength{\bibhang}{15pt}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	urlcolor=cyan
+}
+
+\newcommand*{\Lingbib}{\href{http://lingbib.org/}{Lingbib}}
+\newcommand*{\SP}{\emph{Semantics \& Pragmatics}}
+\newcommand*{\UnifiedStyleSheet}{\href{http://celxj.org/downloads/UnifiedStyleSheet.pdf}{Unified Stylesheet for Linguistics}}
+\newcommand*{\SPUnified}{\href{https://github.com/semprag/biblatex-sp-unified/}{\Package{biblatex-sp-unified}}}
+
+\newcommand*{\Package}[1]{\texttt{#1}}
+
+\newcommand*{\bibentrytest}[2]{
+	% target output
+	\parbox{0.1\textwidth}{Target}
+	\fbox{\parbox{0.9\textwidth}{
+			\begin{hangparas}{15pt}{1}
+				#1
+			\end{hangparas}
+		}
+	}
+	
+	% test entry
+	\parbox{0.1\textwidth}{Test}
+	\fbox{\parbox{0.9\textwidth}{
+			\begin{refsection}
+				\nocite{#2}
+				\printbibliography[heading=none]
+			\end{refsection}
+		}
+	}
+}
+
+\title{Testing document for checking conformity to the \UnifiedStyleSheet}
+\author{\Lingbib}
+\date{Last updated: \today}
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is a testing document for checking whether entries in the \Lingbib{} database will be formatted in accordance with the guidelines in the \UnifiedStyleSheet{} when printed in a \LaTeX{} document using  \SP' \href{https://github.com/semprag/biblatex-sp-unified/}{\Package{biblatex} implementation of the Unified Stylesheet for Linguistics (\Package{biblatex-sp-unified})}.
+
+For each test case, the target output is directly followed by the test output.
+\end{abstract}
+
+
+
+\section{Journal articles}
+
+\subsection{Ordinary article}
+
+\bibentrytest{
+	Chomsky, Noam. 2013. \textit{Problems of projection}. \textit{Lingua} 130(1). 33--49.
+}{
+	chomsky2013:projection
+}
+
+
+\section{Theses and Dissertations}
+
+\subsection{PhD Thesis}
+
+\bibentrytest{
+	Munn, Alan Boag. 1993. \textit{Topics in the syntax and semantics of coordinate structures}. College Park, MD: University of Maryland PhD thesis.
+}{
+	munn1993:coordinate
+}
+
+
+\section{Book}
+
+\subsection{Target Output}
+
+\bibentrytest{
+Chomsky, Noam. 1986. \textit{Knowledge of language: Its nature, origin, and use}. New York, NY: Praeger.
+	}{
+	chomsky1986:knowledge
+}
+
+
+
+\end{document}
