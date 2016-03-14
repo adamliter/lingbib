@@ -1,27 +1,28 @@
 "$schema": "http://json-schema.org/schema#"
 
-
 title: BiblatexYAMLDatabase
 description:
     Schema for a bibliographic database utilizing the Biblatex data model and stored in YAML format.
     Fundamentally similar to a BibTeX format file, but with some extensions.
     Several existing projects support such a format, but there are no standards or schemas available.
 type: object
+
 properties:
     people:
         type: object
         additionalProperties: {"$ref": "#/definitions/PersonEntry"}
+
     xdata:
         type: object
         properties:
             additionalProperties: {"$ref": "#/definitions/BibEntry"}
+
     entries:
         type: object
         additionalProperties: {"$ref": "#/definitions/BibEntry"}
-        
+
 definitions:
     PersonEntry:
-        title: PersonEntry
         type: object
         additionalProperties: false
         properties:
@@ -31,11 +32,12 @@ definitions:
             lineage: {type: string}
             url: {type: string}
             orcid: {type: string}
+
     PersonList:
         type: array
         items: {"$ref": "#/definitions/PersonEntry"}
+
     BibEntry:
-        title: BibEntry
         type: object
         # additionalProperties: false
         properties:
