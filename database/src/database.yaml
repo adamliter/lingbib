@@ -3,7 +3,8 @@ people:
     first: Alan
     last: Munn
     url: "https://msu.edu/~amunn/"
-    orcid: 0000-0003-0265-9119
+    ids:
+      orcid: 0000-0003-0265-9119
 
   cristina_schmitt: &cristina_schmitt
     first: Cristina

@@ -31,9 +31,9 @@ OUTFILENAME = sys.argv[2]
 with open(INFILENAME) as infile:
     srcdata = yaml.load(infile)
 
-# delete unsupported fields
+# delete unsupported fields in person entries
 for person in srcdata['people'].itervalues():
-    for field in ['orcid', 'url']:
+    for field in ['ids', 'url']:
         if person.has_key(field):
             del person[field]
 

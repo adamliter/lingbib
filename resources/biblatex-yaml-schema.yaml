@@ -31,7 +31,10 @@ definitions:
             last: {type: string}
             lineage: {type: string}
             url: {type: string}
-            orcid: {type: string}
+            ids:
+                type: object
+                properties:
+                    orcid: {type: string}
 
     PersonList:
         type: array
