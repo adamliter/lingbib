@@ -24,7 +24,6 @@ properties:
 definitions:
     PersonEntry:
         type: object
-        additionalProperties: false
         properties:
             first: {type: string}
             middle: {type: string}
@@ -35,6 +34,7 @@ definitions:
                 type: object
                 properties:
                     orcid: {type: string}
+        additionalProperties: false
 
     PersonList:
         type: array
@@ -59,11 +59,10 @@ definitions:
 
     BibEntry:
         type: object
-        additionalProperties: false
         properties:
+            #biblatex fields
             type: {$ref: "#/definitions/EntryType"}
 
-            #biblatex fields
             abstract: {type: string}
             author: {$ref: "#/definitions/PersonList"}
             crossref: {type: string}
@@ -106,4 +105,4 @@ definitions:
             keyoverride: {type: string}
             titlekeyword: {type: string}
             xdatatype: {$ref: "#/definitions/XDataType"}
-                
+        additionalProperties: false   
