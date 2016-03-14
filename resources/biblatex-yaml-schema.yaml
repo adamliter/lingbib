@@ -91,11 +91,10 @@ definitions:
             subtitle: {type: string}
             title: {type: string}
             volume: {type: string}
-            volumes: {type: string}
+            volumes: {type: string} 
             xdata: {type: string}
 
             # lingbib-specific fields
-            citekey: {type: string}
             keyoverride: {type: string}
             titlekeyword: {type: string}
             xdatatype:

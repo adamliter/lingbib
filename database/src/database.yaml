@@ -45,7 +45,7 @@ xdata:
       date: 2005-06
       issuesubtitle: Issues in the Form and Interpretation of Noun Phrases
       issuetitle: The Structure of (In)definiteness
-      citekey: lingua_115_6
+      keyoverride: lingua_115_6
       number: '6'
       xdatatype: periodicalissue
       volume: '115'
@@ -172,7 +172,7 @@ entries:
     author:
     - *noam_chomsky
     doi: 10.1016/j.lingua.2012.12.003
-    citekey: chomsky2013_projection
+    keyoverride: chomsky2013_projection
     keywords: syntax, projection, Merge, labeling, minimal computation, minimal
       search, Minimalism
     langid: american
@@ -204,7 +204,7 @@ entries:
     - *alan_munn
     - *cristina_schmitt
     doi: 10.1016/j.lingua.2004.01.007
-    citekey: munn2005_number
+    keyoverride: munn2005_number
     keywords: syntax, morphosyntax, noun phrase, bare noun phrase, predication,
       number, Brazilian Portuguese, Spanish, French
     langid: canadian
