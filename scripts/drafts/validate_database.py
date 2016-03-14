@@ -1,4 +1,4 @@
-# coding: utf-8
+#! /usr/bin/env python
 import yaml
 with open("database/src/database.yaml") as f:
     db = yaml.load(f)
