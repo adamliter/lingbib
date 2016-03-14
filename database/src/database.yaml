@@ -94,8 +94,7 @@ entries:
     date: '1987'
     keywords: DP hypothesis, gerunds, noun phrase, determiner phrase
     langid: american
-    sortname:
-    - *steven_abney
+    sortname: "Abney, Steven"
     title: The {English} Noun Phrase in its Sentential Aspect
     titlekeyword: noun
     type: thesis
