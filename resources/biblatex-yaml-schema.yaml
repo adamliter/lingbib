@@ -89,7 +89,7 @@ definitions:
             maintitle: {type: string}
             number: {type: string}
             pages: {type: string}
-            pagetotal: {type: string}
+            pagetotal: {type: number}
             publisher: {type: string}
             series: {type: string}
             shortjournal: {type: string}
@@ -97,8 +97,8 @@ definitions:
             sortname: {type: string}
             subtitle: {type: string}
             title: {type: string}
-            volume: {type: string}
-            volumes: {type: string} 
+            volume: {type: number}
+            volumes: {type: number} 
             xdata: {type: string}
 
             # lingbib-specific fields

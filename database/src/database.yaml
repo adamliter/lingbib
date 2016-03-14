@@ -46,9 +46,9 @@ xdata:
       issuesubtitle: Issues in the Form and Interpretation of Noun Phrases
       issuetitle: The Structure of (In)definiteness
       keyoverride: lingua_115_6
-      number: '6'
+      number: 6
       xdatatype: periodicalissue
-      volume: '115'
+      volume: 115
       xdata: lingua
       type: xdata
 
@@ -58,9 +58,9 @@ xdata:
       - *luigi_rizzi
       issuesubtitle: Core Ideas and Results in Syntax
       issuetitle: Syntax and Cognition
-      number: '1'
+      number: 1
       xdatatype: periodicalissue
-      volume: '130'
+      volume: 130
       xdata: lingua
       type: xdata
 
@@ -92,7 +92,7 @@ entries:
     - first: Steven
       last: Abney
       middle: Paul
-    date: '1987'
+    date: "1987"
     keywords: DP hypothesis, gerunds, noun phrase, determiner phrase
     langid: american
     sortname: "Abney, Steven"
@@ -107,7 +107,7 @@ entries:
     langid: american
     title: Structuring Sense
     type: mvbook
-    volumes: '3'
+    volumes: 3
     xdata: OUP
 
   borer2005_events:
@@ -118,11 +118,11 @@ entries:
     isbn: '9780199263929'
     keywords: events, event structure, syntax, semantics, grammar, lexicon, English,
       Catalan, Finnish, Hebrew, Czech, Polish, Russian, Spanish
-    pagetotal: '418'
+    pagetotal: 418
     title: The Normal Course of Events
     titlekeyword: events
     type: book
-    volume: '2'
+    volume: 2
 
   borer2005_name:
     abstract: This book explores the difference between words however defined and structures however constructed. It sets out to demonstrate over three volumes~---~of which this is the first~---~that the explanation of linguistic competence should be shifted from lexical entry to syntactic structure, from memory of words to manipulation of rules. Its reformulation of how grammar and lexicon interact has profound implications for linguistic, philosophical, and psychological theories about human mind and language. The book departs from both language specific constructional approaches and lexicalist approaches to argue that universal hierarchical structures determine interpretation, and that language variation emerges from the morphological and phonological properties of inflectional material. This volume applies this radical approach to nominal structure. Integrating research in syntax, semantics, and morphology, the volume argues that nominal structure is based on the syntactic realization of semantic notions such as classifier, quantity, and reference. In the process, this volume seeks to do away with lexical ambiguity and type-shifting. Among the topics the volume considers are the interpretation of proper names, the mass-count distinction, the weak-strong interpretation of quantifiers, partitive and measure phrases, and the structural representation of the definite article. In the process, the volume explores inter-language variation through the properties of the morpho-phonological system. The languages discussed include English, Chinese, Italian, and Hebrew.
@@ -133,11 +133,11 @@ entries:
     keywords: syntax, variation, inflection, morphophonology, morphology, phonology,
       type shifting, proper names, mass nouns, count nouns, definites, English,
       Chinese, Italian, Hebrew
-    pagetotal: '324'
+    pagetotal: 324
     title: In Name Only
     titlekeyword: name
     type: book
-    volume: '1'
+    volume: 1
 
   borer2013_form:
     abstract: This book is volume III of a trilogy which explores the difference between words however defined and structures however constructed. The trilogy sets out to demonstrate that the explanation of linguistic competence should be shifted from lexical entries to syntactic structure, from the memorizing of listed information to the manipulation of grammatical rules. Its reformulation of how grammar and listed items interact has profound implications for linguistic, philosophical, and psychological theories about the human mind and language. The book departs from both constructional approaches to syntax and the long generative tradition that uses the word as the nucleus around which the syntax grows. It argues that the hierarchical, abstract structures of language are universal, not language specific, and that language variation emerges from the morphological and phonological properties of grammatical functors, or more specifically, inflection. This volume applies this approach to the construction of complex words. The book develops a new model of word formation, arguing that the basic building blocks of language are on the one hand rigid semantic and syntactic functions, and on the other hand, roots, which in themselves are but packets of phonological information, and are devoid of both meaning and grammatical properties of any kind. Within such a model, syntactic category, syntactic selection and argument structure are all mediated through syntactic structures projected from rigid functions, or alternatively, constructed through general combinatorial principles of syntax, such as Chomsky's Merge. The meaning of `words', in turn, does not involve the existence of lexemes, but rather the matching of a well-defined and phonologically articulated syntactic domain with conceptual Content, itself outside the domain of language as such. In a departure from most current models of syntax but in line with many philosophical traditions, then, the Exo-Skeletal model partitions `meaning' into formal functions, on the one hand, and Content, on the other hand. While the former are read off syntactico-semantic structures as is usually assumed, Content is crucially read off syntactico-phonological structures.
@@ -147,11 +147,11 @@ entries:
     isbn: '9780199263936'
     keywords: morphology, morphosyntax, morpheme, syntax, nominalizations, inflection,
       derivation, root, morphophonology, phonology
-    pagetotal: '704'
+    pagetotal: 704
     title: Taking Form
     titlekeyword: form
     type: book
-    volume: '3'
+    volume: 3
 
   chomsky1986_knowledge:
     author:
