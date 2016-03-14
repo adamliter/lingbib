@@ -10,16 +10,16 @@ type: object
 properties:
     people:
         type: object
-        additionalProperties: {"$ref": "#/definitions/PersonEntry"}
+        additionalProperties: {$ref: "#/definitions/PersonEntry"}
 
     xdata:
         type: object
         properties:
-            additionalProperties: {"$ref": "#/definitions/BibEntry"}
+            additionalProperties: {$ref: "#/definitions/BibEntry"}
 
     entries:
         type: object
-        additionalProperties: {"$ref": "#/definitions/BibEntry"}
+        additionalProperties: {$ref: "#/definitions/BibEntry"}
 
 definitions:
     PersonEntry:
@@ -35,7 +35,7 @@ definitions:
 
     PersonList:
         type: array
-        items: {"$ref": "#/definitions/PersonEntry"}
+        items: {$ref: "#/definitions/PersonEntry"}
 
     BibEntry:
         type: object
@@ -52,11 +52,11 @@ definitions:
 
             #biblatex fields
             abstract: {type: string}
-            author: {"$ref": "#/definitions/PersonList"}
+            author: {$ref: "#/definitions/PersonList"}
             crossref: {type: string}
             date: {type: string}
             doi: {type: string}
-            editor: {"$ref": "#/definitions/PersonList"}
+            editor: {$ref: "#/definitions/PersonList"}
             eprint: {type: string}
             eprinttype: {type: string}
             ids: {type: string}
@@ -81,7 +81,7 @@ definitions:
             series: {type: string}
             shortjournal: {type: string}
             shorttitle: {type: string}
-            sortname: {"$ref": "#/definitions/PersonList"}
+            sortname: {$ref: "#/definitions/PersonList"}
             subtitle: {type: string}
             title: {type: string}
             volume: {type: string}
