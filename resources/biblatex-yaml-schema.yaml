@@ -50,6 +50,10 @@ definitions:
             - xdata
 
     XDataType:
+        description:
+            The type of a Biblatex XData entry.
+            In a BibTeX file the type is always XData, so we use another field to store the logical type.
+            Note that some of these are similar but not identical to actual Biblatex types, because of the way XData inheritance works.
         type: string
         enum:
             - institution
