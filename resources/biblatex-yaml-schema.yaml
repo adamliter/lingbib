@@ -83,7 +83,7 @@ definitions:
             series: {type: string}
             shortjournal: {type: string}
             shorttitle: {type: string}
-            sortname: {$ref: "#/definitions/PersonList"}
+            sortname: {type: string}
             subtitle: {type: string}
             title: {type: string}
             volume: {type: string}
