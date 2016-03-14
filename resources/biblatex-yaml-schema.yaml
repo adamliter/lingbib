@@ -25,11 +25,11 @@ definitions:
     PersonEntry:
         type: object
         properties:
-            first: {type: string}
-            middle: {type: string}
-            last: {type: string}
-            lineage: {type: string}
-            url: {type: string}
+            first:      {type: string}
+            middle:     {type: string}
+            last:       {type: string}
+            lineage:    {type: string}
+            url:        {type: string}
             ids:
                 type: object
                 properties:
@@ -60,49 +60,49 @@ definitions:
     BibEntry:
         type: object
         properties:
-            #biblatex fields
-            type: {$ref: "#/definitions/EntryType"}
+            type:           {$ref: "#/definitions/EntryType"}
 
-            abstract: {type: string}
-            author: {$ref: "#/definitions/PersonList"}
-            crossref: {type: string}
-            date: {type: string}
-            doi: {type: string}
-            editor: {$ref: "#/definitions/PersonList"}
-            eprint: {type: string}
-            eprinttype: {type: string}
-            ids: {type: string}
+            #biblatex fields
+            abstract:       {type: string}
+            author:         {$ref: "#/definitions/PersonList"}
+            crossref:       {type: string}
+            date:           {type: string}
+            doi:            {type: string}
+            editor:         {$ref: "#/definitions/PersonList"}
+            eprint:         {type: string}
+            eprinttype:     {type: string}
+            ids:            {type: string}
             indexsorttitle: {type: string}
-            indextitle: {type: string}
-            institution: {type: string}
-            isbn: {type: string}
-            issn: {type: string}
-            issue: {type: string}
-            issuesubtitle: {type: string}
-            issuetitle: {type: string}
+            indextitle:     {type: string}
+            institution:    {type: string}
+            isbn:           {type: string}
+            issn:           {type: string}
+            issue:          {type: string}
+            issuesubtitle:  {type: string}
+            issuetitle:     {type: string}
             journalsubtitle: {type: string}
-            journaltitle: {type: string}
-            keywords: {type: string}
-            langid: {type: string}
-            location: {type: string}
-            mainsubtitle: {type: string}
-            maintitle: {type: string}
-            number: {type: string}
-            pages: {type: string}
-            pagetotal: {type: number}
-            publisher: {type: string}
-            series: {type: string}
-            shortjournal: {type: string}
-            shorttitle: {type: string}
-            sortname: {type: string}
-            subtitle: {type: string}
-            title: {type: string}
-            volume: {type: number}
-            volumes: {type: number} 
-            xdata: {type: string}
+            journaltitle:   {type: string}
+            keywords:       {type: string}
+            langid:         {type: string}
+            location:       {type: string}
+            mainsubtitle:   {type: string}
+            maintitle:      {type: string}
+            number:         {type: string}
+            pages:          {type: string}
+            pagetotal:      {type: number}
+            publisher:      {type: string}
+            series:         {type: string}
+            shortjournal:   {type: string}
+            shorttitle:     {type: string}
+            sortname:       {type: string}
+            subtitle:       {type: string}
+            title:          {type: string}
+            volume:         {type: number}
+            volumes:        {type: number} 
+            xdata:          {type: string}
 
             # lingbib-specific fields
-            keyoverride: {type: string}
-            titlekeyword: {type: string}
-            xdatatype: {$ref: "#/definitions/XDataType"}
+            keyoverride:    {type: string}
+            titlekeyword:   {type: string}
+            xdatatype:      {$ref: "#/definitions/XDataType"}
         additionalProperties: false   
