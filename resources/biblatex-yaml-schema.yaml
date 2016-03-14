@@ -51,7 +51,7 @@ definitions:
 
     BibEntry:
         type: object
-        # additionalProperties: false
+        additionalProperties: false
         properties:
             type: {$ref: "#/definitions/EntryType"}
 
@@ -82,6 +82,7 @@ definitions:
             maintitle: {type: string}
             number: {type: string}
             pages: {type: string}
+            pagetotal: {type: string}
             publisher: {type: string}
             series: {type: string}
             shortjournal: {type: string}
@@ -90,6 +91,7 @@ definitions:
             subtitle: {type: string}
             title: {type: string}
             volume: {type: string}
+            volumes: {type: string}
             xdata: {type: string}
 
             # lingbib-specific fields
