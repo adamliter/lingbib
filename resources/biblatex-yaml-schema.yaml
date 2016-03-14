@@ -49,6 +49,14 @@ definitions:
             - thesis
             - xdata
 
+    XDataType:
+        type: string
+        enum:
+            - institution
+            - periodical
+            - periodical_issue
+            - publisher
+
     BibEntry:
         type: object
         additionalProperties: false
@@ -97,10 +105,5 @@ definitions:
             # lingbib-specific fields
             keyoverride: {type: string}
             titlekeyword: {type: string}
-            xdatatype:
-                type: string
-                enum:
-                    - institution
-                    - periodical
-                    - periodical_issue
-                    - publisher
+            xdatatype: {$ref: "#/definitions/XDataType"}
+                
