@@ -37,18 +37,20 @@ definitions:
         type: array
         items: {$ref: "#/definitions/PersonEntry"}
 
+    EntryType:
+        type: string
+        enum:
+            - article
+            - book
+            - mvbook
+            - thesis
+            - xdata
+
     BibEntry:
         type: object
         # additionalProperties: false
         properties:
-            type:
-                type: string
-                enum:
-                    - article
-                    - book
-                    - mvbook
-                    - thesis
-                    - xdata
+            type: {$ref: "#/definitions/EntryType"}
 
             #biblatex fields
             abstract: {type: string}
