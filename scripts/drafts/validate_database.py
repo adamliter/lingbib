@@ -2,7 +2,7 @@
 import yaml
 with open("database/src/database.yaml") as f:
     db = yaml.load(f)
-with open("schema/biblatex-yaml.yaml") as f:
+with open("schema/lingbib.schema.yaml") as f:
     schema = yaml.load(f)
 
 import jsonschema
