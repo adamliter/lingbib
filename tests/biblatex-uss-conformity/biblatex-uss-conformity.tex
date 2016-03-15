@@ -11,7 +11,6 @@
 
 \usepackage[
 	backend=biber,
-	refsection=section,
 	% Install both of these styles from https://github.com/semprag/biblatex-sp-unified
 	bibstyle=biblatex-sp-unified,
 	citestyle=sp-authoryear-comp,
@@ -59,13 +58,23 @@
 
 \newcommand*{\bibentrytest}[2]{
 	% target output
-	\begin{hangparas}{15pt}{1}
-	#1
-	\end{hangparas}
+	\parbox{0.1\textwidth}{Target}
+	\fbox{\parbox{0.9\textwidth}{
+			\begin{hangparas}{15pt}{1}
+				#1
+			\end{hangparas}
+		}
+	}
 	
 	% test entry
-	\nocite{#2}
-	\printbibliography[heading=none]
+	\parbox{0.1\textwidth}{Test}
+	\fbox{\parbox{0.9\textwidth}{
+			\begin{refsection}
+				\nocite{#2}
+				\printbibliography[heading=none]
+			\end{refsection}
+		}
+	}
 }
 
 \title{Testing document for checking conformity to the \UnifiedStyleSheet}
@@ -91,11 +100,10 @@ For each test case, the target output is directly followed by the test output.
 \subsection{Ordinary article}
 
 \bibentrytest{
-	Chomsky, Noam. 2013. \textit{Problems of projection}. \textit{Lingua} 130(1). 33--49.
+	Chomsky, Noam. 2013. \textit{Problems of projection}. \textit{Lingua} 130(1). 33--49. \url{http://dx.doi.org/10.1016/j.lingua.2012.12.003}.
 }{
 	chomsky2013_projection
 }
-
 
 
 \section{Theses and Dissertations}
@@ -109,24 +117,15 @@ For each test case, the target output is directly followed by the test output.
 }
 
 
-
 \section{Book}
 
 \subsection{Target Output}
 
-\begin{hangparas}{15pt}{1}
-	
+\bibentrytest{
 Chomsky, Noam. 1986. \textit{Knowledge of language: Its nature, origin, and use}. New York, NY: Praeger.
-
-\end{hangparas}
-
-\subsection{Test Output}
-
-\nocite{chomsky1986_knowledge}
-
-\printbibliography[
-heading=none
-]
+	}{
+	chomsky1986_knowledge
+}
 
 
 
