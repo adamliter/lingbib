@@ -1,0 +1,7 @@
+click==5.1
+functools32==3.2.3.post2
+jsonschema==2.5.1
+latexcodec==1.0.2
+pybtex==0.20.1
+PyYAML==3.11
+six==1.10.0
